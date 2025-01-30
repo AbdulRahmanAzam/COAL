@@ -1,8 +1,8 @@
 # ABDUL RAHMAN AZAM
-# 23K-0061
+## 23K-0061
 
 # TASK 1
-# Lets do a setup and write your first code in ASSEMBLY LANGUAGE
+## Lets do a setup and write your first code in ASSEMBLY LANGUAGE
 
 ![image](https://github.com/user-attachments/assets/c82fa860-6696-49f5-b05e-37944bbf539b)Create new project
 
