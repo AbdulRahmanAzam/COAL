@@ -4,7 +4,6 @@
 # TASK 1
 ## Lets do a setup and write your first code in ASSEMBLY LANGUAGE
 
-![image](https://github.com/user-attachments/assets/c82fa860-6696-49f5-b05e-37944bbf539b)Create new project
 
 ### Right click on Project then
 ![image](https://github.com/user-attachments/assets/09a75acc-bea4-4b6f-9499-7b60083cd339)
