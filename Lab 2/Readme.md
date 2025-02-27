@@ -2,13 +2,8 @@
 
 Task 1
 1)
-![image](https://github.com/user-attachments/assets/15f64867-898d-4d8d-aab9-6f1f991656f0)
-![image](https://github.com/user-attachments/assets/d7571d37-76ea-427a-8bab-4eeae06aaf8a)
+![image](https://github.com/user-attachments/assets/0adfc49c-b71b-4a1a-9fef-ccf4f5c2a8f5)
 
 
-2) ![image](https://github.com/user-attachments/assets/1f9ba903-3b27-4c8d-83bd-bd046bcbdc99)
-![image](https://github.com/user-attachments/assets/90c69712-927c-4fff-a8aa-a0d1f4574d5f)
-
-
-3) 
+2) 
 
