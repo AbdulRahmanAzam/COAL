@@ -1,9 +1,9 @@
-WriteDec     	Print integer
+WriteDec;     	Print integer
 
-WriteString	  Print string
+WriteString;	  Print string
 
-DumpRegs	    Print all registers
+DumpRegs;	    Print all registers
 
-CrLf        	Print a new line
+CrLf;        	Print a new line
 
-WriteChar ' '	Print a space
+WriteChar ' ';	Print a space
