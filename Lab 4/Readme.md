@@ -1,5 +1,5 @@
 ### Q1) What errors are present in the following?
-```
+```asm
  MOV AX 3d     -> comma missing
  MOV 23, AX    -> register cannot stored in number
  MOV CX, CH    -> Correct
@@ -10,7 +10,7 @@
 ```
 
 ### Q2 
-```
+```asm
 .code
 main PROC
 ; ABDUL RAHMAN AZAM
@@ -23,7 +23,7 @@ mov ecx, 'D'
 ![image](https://github.com/user-attachments/assets/42b13988-7075-4570-b417-e0a80c2131eb)
 
 ### Q3
-```
+```asm
 INCLUDE Irvine32.inc
 
 .data
@@ -48,7 +48,7 @@ END main
 
 
 ### Q4
-```
+```asm
 main PROC
 mov eax, 89
 add eax, 75Fh
@@ -59,7 +59,7 @@ add eax, 1101b
 ![image](https://github.com/user-attachments/assets/a495c74c-2c2b-419b-9a08-465183fe398c)
 
 
-```
+```asm
 INCLUDE Irvine32.inc
 
 .data
@@ -89,7 +89,7 @@ END main
 
 
 ### Q6
-```
+```asm
 INCLUDE Irvine32.inc
 
 .data
@@ -108,9 +108,78 @@ END main
 ```
 ![image](https://github.com/user-attachments/assets/6c052035-9332-4c4c-b5e1-9a20a3941e33)
 
-
 ### Q7
-```
+```asm
+INCLUDE Irvine32.inc
 
+.data
+	A DWORD 0FF10h
+	B DWORD 0E10Bh
+	
+.code
+main PROC
+	mov eax, A
+	call writeHex
+	call CrLf
+
+	mov eax, B
+	call writeHex
+	call CrLf
+
+
+	; code for swap
+	mov eax, A
+	xchg eax, B
+	mov A, eax
+
+
+	mov eax, A
+	call writeHex
+	call CrLf
+
+	mov eax, B
+	call writeHex
+	call CrLf
+
+	call ExitProcess
+main ENDP
+END main
 ```
+![image](https://github.com/user-attachments/assets/01b41cca-4397-417b-9fec-dfa2de86505e)
+
+
+
+### Q8
+```asm
+INCLUDE Irvine32.inc
+
+.data
+	val1 BYTE 10h
+	val2 WORD 8000h
+	vaL3 DWORD 0FFFFh
+	vaL4 WORD 7FFFh
+
+.code
+main PROC
+	INC val1
+	movzx eax, val1
+	call writeHex
+	call CrLf
+
+	mov eax, 5
+	SUB eax, val3
+
+	movzx eax, val4
+	movzx ebx, val2
+	SUB ebx, eax
+
+	mov eax, ebx
+	call writeHex
+	call CrLf
+
+	call ExitProcess
+main ENDP
+END main
+```
+![image](https://github.com/user-attachments/assets/7e1f1520-4800-4270-a3aa-c7b9164bd79d)
 
