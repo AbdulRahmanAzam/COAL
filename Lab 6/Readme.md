@@ -300,6 +300,68 @@ END main
 
 ### 4
 
+### 5
+![image](https://github.com/user-attachments/assets/da76372d-62fe-4467-9015-417da4545451)
+
+```
+INCLUDE Irvine32.inc
+
+
+.data
+	array DWORD 1,2,3,4,5,6,7,8
+	arraySize = LENGTHOF array
+
+.code
+main PROC
+	call PrintArray
+
+	mov esi, OFFSET array                ; first pointer
+	mov edi, OFFSET array                ; last pointer
+	add edi, SIZEOF array
+	sub edi, TYPE array
+
+	mov ecx, arraySize
+	shr ecx, 1
+
+	ReverseLoop:
+		mov eax, [esi]
+		xchg eax, [edi]
+		mov [esi], eax
+
+		add esi, TYPE array
+		sub edi, TYPE array
+		loop ReverseLoop
+
+	call PrintArray
+
+	exit
+main ENDP
+
+PrintArray PROC
+	pushad
+
+	
+	mov esi, OFFSET array
+	mov ecx, arraySize
+
+	l1:
+		mov eax, [esi]
+		call writeDec
+
+		mov al, ' '
+		call writeChar
+
+		add esi, TYPE array
+		loop l1
+
+	call CrLf
+	popad  
+	ret
+PrintArray ENDP
+
+END main
+```
+
 
 ### 6
 ![image](https://github.com/user-attachments/assets/8519503e-28ee-44e6-8b15-1c77590224ea)
