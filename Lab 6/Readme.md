@@ -11,7 +11,6 @@
 
 [Q6](#Q6)
 
-[Q7](#Q7)
 
 
 ### Q1
@@ -201,7 +200,7 @@ END main
 
 
 
-### 3
+### Q3
 ```
 INCLUDE Irvine32.inc
 
@@ -298,7 +297,7 @@ END main
 ```
 
 
-### 4
+### Q4
 ![image](https://github.com/user-attachments/assets/199c001d-7c8a-48a0-a381-6b20e146af8b)
 
 ```
@@ -337,7 +336,7 @@ main ENDP
 END main
 ```
 
-### 5
+### Q5
 ![image](https://github.com/user-attachments/assets/da76372d-62fe-4467-9015-417da4545451)
 
 ```
@@ -400,7 +399,7 @@ END main
 ```
 
 
-### 6
+### Q6
 ![image](https://github.com/user-attachments/assets/8519503e-28ee-44e6-8b15-1c77590224ea)
 
 ```
