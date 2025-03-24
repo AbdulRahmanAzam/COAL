@@ -299,6 +299,43 @@ END main
 
 
 ### 4
+![image](https://github.com/user-attachments/assets/199c001d-7c8a-48a0-a381-6b20e146af8b)
+
+```
+INCLUDE Irvine32.inc
+
+.data
+	source  BYTE "Hello world", 0
+	target BYTE LENGTHOF Source DUP(?)
+
+.code
+main PROC
+	mov edx, OFFSET source
+	call WriteString
+	call CrLf
+
+	mov esi, 0
+	mov ecx, LENGTHOF source
+
+	copy:
+		mov al, source[esi]
+		mov target[esi], al
+
+		cmp al, 0
+		je done
+
+		inc esi
+		loop copy
+
+	done:
+		mov edx, OFFSET target
+		call WriteString
+		call CrLf
+
+	exit
+main ENDP
+END main
+```
 
 ### 5
 ![image](https://github.com/user-attachments/assets/da76372d-62fe-4467-9015-417da4545451)
